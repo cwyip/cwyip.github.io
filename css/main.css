@@ -1,0 +1,20 @@
+/* css/main.css */
+/*
+Small - 40.0625em
+Medium - 64.0625em
+*/
+
+@media only screen and (min-width: 40.0625em) {
+    #sidebar {
+        position: fixed;
+        width: 250px;
+    }
+
+    #main_body {
+        padding-left: 250px;
+    }
+}
+
+.top-bar-section .second-level {
+  padding-left: 30px;
+}
