@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="align-logo-bottom">
+  <div class="row">
+    <div class="small-9 small-centered large-centered columns">
+    {% if page.image %}
+      <img src="{{ site.baseurl }}/{{ page.main_image }}" />
+    {% else %}
+      <div class="panel radius">
+        {{ page.content }}
+      </div>
+    {% endif %}
+    </div>
+  </div>
+</div>
