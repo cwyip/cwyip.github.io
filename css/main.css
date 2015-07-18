@@ -55,3 +55,7 @@ Medium - 64.0625em
   border: none;
   height: 10px;
 }
+
+.panel {
+  background-color: transparent;
+}

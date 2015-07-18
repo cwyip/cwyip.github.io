@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="align-logo-bottom">
+  {% for post in paginator.posts %}
+    <div class="panel radius">
+      <h6 class="subheader">{{ post.date | date_to_long_string }}</h6>
+      <img src="{{ site.baseurl }}/{{ post.main_image }}" />
+      <h5>{{ post.title }}</h5>
+      <div>
+        {{ post.content }}
+      </div>
+    </div>
+  {% endfor %}
+
+  <!-- Pagination links -->
+  {% include pagination.html %}
+</div>
