@@ -7,8 +7,8 @@ toggle_nav = function(nav_id) {
         } else {
             nav.className = "second-level hide";
         }
-        return true;
-    } else {
         return false;
+    } else {
+        return true;
     }
 };

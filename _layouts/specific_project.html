@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="row align-logo-bottom">
+  <div class="large-12 columns">
+    <img src="{{ site.baseurl }}/{{ page.main_image }}" />
+    <h1>{{ page.title }}</h1>
+    <h6 class="subheader">{{ page.date | date_to_long_string }}</h6>
+
+    <div>
+      {{ page.content }}
+    </div>
+  </div>
+</div>
+

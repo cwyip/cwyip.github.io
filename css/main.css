@@ -12,17 +12,17 @@ Medium - 64.0625em
     }
 
     #main_body {
-        padding-left: 200px;
+        padding-left: 220px;
     }
-}
 
-/*
-    IMPORTANT: when changing logo, update below;
-    Distance from top + height of logo
-*/
-.align-logo-bottom {
-  position: relative;
-  top: 123px;
+    /*
+        IMPORTANT: when changing logo, update below;
+        Distance from top + height of logo
+    */
+    .align-logo-bottom {
+      position: relative;
+      top: 123px;
+    }
 }
 
 .sidebar-content {
