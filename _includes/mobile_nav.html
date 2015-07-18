@@ -10,18 +10,9 @@
       </ul>
       <section class="top-bar-section">
         <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="#">Art</a>
-            <ul>
-              <li><a href="#" class="second-level">Projects</a></li>
-              <li><a href="#" class="second-level">Video</a></li>
-              <li><a href="#" class="second-level">Misc.</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Design</a></li>
-          <li class="divider"></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul>
+          {% assign art_nav_id = "mobile_art_sub_nav" %}
+          {% include nav_content.html %}
         </ul>
       </section>
     </nav>

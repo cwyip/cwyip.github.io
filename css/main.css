@@ -8,6 +8,7 @@ Medium - 64.0625em
     #sidebar {
         position: fixed;
         width: 250px;
+        z-index: 99;
     }
 
     #main_body {
@@ -15,6 +16,14 @@ Medium - 64.0625em
     }
 }
 
-.top-bar-section .second-level {
+.top-bar-section .second-level-text {
   padding-left: 30px;
+}
+
+.side-nav .second-level {
+  list-style-type: none;
+}
+
+.side-nav .second-level.hide {
+  display: none;
 }

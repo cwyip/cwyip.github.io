@@ -6,11 +6,11 @@
   <body>
     {% include mobile_nav.html %}
     <div class="row">
-      <div id="sidebar" class="show-for-medium-up">
+      <div id="sidebar" class="medium-3 large-3 columns show-for-medium-up">
         <!-- Sidebar -->
         {% include desktop_nav.html %}
       </div>
-      <div id="main_body"class="large-12 columns">
+      <div id="main_body" class="large-12 columns">
         {{ content }}
         {% include footer.html %}
       </div>

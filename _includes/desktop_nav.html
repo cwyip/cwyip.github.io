@@ -1,23 +1,9 @@
 <div>
   <!-- Nav links -->
-  <ul class="accordion" data-accordion>
-    <li class="accordion-navigation">
-      <a href="#art_links">Art</a>
-      <div id="art_links" class="content">
-        <ul>
-          <li>Projects</li>
-          <li>Video</li>
-          <li>Misc.</li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-
 
   <ul class="side-nav">
-    <li><a href="#">Design</a></li>
-    <li><a href="#">About</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Contact</a></li>
+    <!-- For accordian. -->
+    {% assign art_nav_id = "desktop_art_sub_nav" %}
+    {% include nav_content.html %}
   </ul>
 </div>
