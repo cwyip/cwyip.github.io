@@ -7,13 +7,36 @@ Medium - 64.0625em
 @media only screen and (min-width: 40.0625em) {
     #sidebar {
         position: fixed;
-        width: 250px;
+        width: 200px;
         z-index: 99;
     }
 
     #main_body {
-        padding-left: 250px;
+        padding-left: 200px;
     }
+}
+
+/*
+    IMPORTANT: when changing logo, update below;
+    Distance from top + height of logo
+*/
+.align-logo-bottom {
+  position: relative;
+  top: 123px;
+}
+
+.sidebar-content {
+  position: relative;
+  top: 75px;
+}
+
+.spacer {
+  height: 10px;
+  list-style: none;
+}
+
+#desktop-logo {
+  margin: 0 0.875rem;
 }
 
 .top-bar-section .second-level-text {
@@ -26,4 +49,9 @@ Medium - 64.0625em
 
 .side-nav .second-level.hide {
   display: none;
+}
+
+.side-nav li.divider {
+  border: none;
+  height: 10px;
 }
