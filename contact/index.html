@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: single_box_centered
+image: false
 ---
-<div class="align-logo-bottom">
+
 
 Thanks for visiting. I would love to get in touch. Please feel free to email me below, it can be suggestions, comments or more.
    
@@ -11,12 +12,12 @@ Thanks for visiting. I would love to get in touch. Please feel free to email me 
   </div>
 
 <form method="post" action="//formspree.io/cwt.yip@gmail.com" class="forms">
-  <div class="row">
-    <div class="small-9 columns">
+  <div class="row collapse">
+    <div class="small-9 large-9 columns">
       <input type="text" name="_replyto" id="form-email" placeholder="Your Email" />
     </div>
-    <div class="small-3 columns">
-      <input type="submit" value="Send" class="button tiny" />
+    <div class="small-3 large-3 columns expand">
+      <input type="submit" value="Send" class="button postfix" />
     </div>
   </div>
   <div class="row">
@@ -27,4 +28,3 @@ Thanks for visiting. I would love to get in touch. Please feel free to email me 
   </div>
   <input type="hidden" name="_next" value="{{ site.baseurl }}/contact/thanks" />
 </form>
-</div>
