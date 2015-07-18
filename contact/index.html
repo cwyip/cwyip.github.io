@@ -1,5 +1,30 @@
 ---
 layout: default
 ---
+<div class="align-logo-bottom">
 
-contact
+Thanks for visiting. I would love to get in touch. Please feel free to email me below, it can be suggestions, comments or more.
+   
+  <div class="row">
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  </div>
+
+<form method="post" action="//formspree.io/cwt.yip@gmail.com" class="forms">
+  <div class="row">
+    <div class="small-9 columns">
+      <input type="text" name="_replyto" id="form-email" placeholder="Your Email" />
+    </div>
+    <div class="small-3 columns">
+      <input type="submit" value="Send" class="button tiny" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <textarea placeholder="Your Message" rows=10 name="body" id="form-content"></textarea>
+      </label>
+    </div>
+  </div>
+  <input type="hidden" name="_next" value="{{ site.baseurl }}/contact/thanks" />
+</form>
+</div>
