@@ -16,6 +16,3 @@ exclude: [publish.sh]
 # Build settings
 markdown: kramdown
 
-
-paginate: 5
-
