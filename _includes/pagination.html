@@ -2,15 +2,9 @@
   <div class="pagination-centered">
     <ul class="pagination">
     {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <li class="arrow">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" >&laquo;</a>
-        </li>
-      {% else %}
-        <li class="arrow">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-        </li>
-      {% endif %}
+      <li class="arrow">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+      </li>
     {% else %}
       <li class="arrow unavailable"><a href="">&laquo;</a></li>
     {% endif %}
