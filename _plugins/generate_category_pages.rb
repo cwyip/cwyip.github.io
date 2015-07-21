@@ -101,7 +101,8 @@ module Jekyll
 
   class Pager
     attr_reader :page, :per_page, :posts, :total_posts, :total_pages,
-      :previous_page, :previous_page_path, :next_page, :next_page_path
+      :previous_page, :previous_page_path, :next_page, :next_page_path,
+      :paginate_url
 
     # Check if pagination is needed for the page. 
     def self.pagination_enabled?(page)
@@ -142,7 +143,8 @@ module Jekyll
     def self.paginate_path(site, num_page, target_page)
       return nil if num_page.nil?
       return target_page.url if num_page <= 1
-      format = site.config['paginate_path']
+      #format = site.config['paginate_path']
+      format = target_page.url.sub('index.html', 'page:num')
       format = format.sub(':num', num_page.to_s)
       ensure_leading_slash(format)
     end
@@ -175,6 +177,7 @@ module Jekyll
     # num_pages - The Integer number of pages or nil if you'd like the number
     #             of pages calculated.
     def initialize(site, page, all_posts, num_pages = nil, target_page, paginate_num)
+      @paginate_url = target_page.url.sub('index.html', 'page:num')
       @page = page
       #@per_page = site.config['custom_paginate'].to_i
       @per_page = paginate_num
@@ -208,7 +211,8 @@ module Jekyll
         'previous_page' => previous_page,
         'previous_page_path' => previous_page_path,
         'next_page' => next_page,
-        'next_page_path' => next_page_path
+        'next_page_path' => next_page_path,
+        'paginate_url' => paginate_url
       }
     end
   end

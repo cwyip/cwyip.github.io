@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="align-logo-bottom">
+<div class="align-logo-bottom scroll-content">
   <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
     {% for post in paginator.posts %}
       <li>
@@ -10,4 +10,6 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+
+  {% include pagination.html %}
 </div>
