@@ -65,3 +65,7 @@ Medium - 64.0625em
 .panel {
   background-color: transparent;
 }
+
+.hidden {
+  display: none;
+}

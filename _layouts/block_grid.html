@@ -2,14 +2,19 @@
 layout: default
 ---
 
-<div class="align-logo-bottom scroll-content">
-  <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-    {% for post in paginator.posts %}
-      <li>
-        <img src="{{ site.baseurl }}/{{ post.main_image }}" />
-      </li>
-    {% endfor %}
-  </ul>
+<div class="align-logo-bottom">
+  <div class="scroll-content">
+    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      {% for post in paginator.posts %}
+        <li>
+          <img src="{{ site.baseurl }}/{{ post.main_image }}" />
+        </li>
+      {% endfor %}
+    </ul>
+    
 
-  {% include pagination.html %}
+    <span class="hidden">
+    {% include pagination.html %}
+    </span>
+  </div>
 </div>
