@@ -69,3 +69,9 @@ Medium - 64.0625em
 .hidden {
   display: none;
 }
+
+.side-nav li a:not(.button):hover, 
+.side-nav li a:not(.button):focus {
+  background: transparent;
+}
+
