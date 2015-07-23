@@ -56,6 +56,8 @@ Medium - 64.0625em
   padding-left: 30px;
 }
 
+/** Sidebar **/
+
 .side-nav .second-level {
   list-style-type: none;
   position: relative;
@@ -74,6 +76,18 @@ Medium - 64.0625em
   height: 10px;
 }
 
+.side-nav li a:not(.button):hover, 
+.side-nav li a:not(.button):focus {
+  background: transparent;
+  color: #555;
+}
+
+.side-nav li a:not(.button) {
+  color: #222;
+}
+
+/**------------**/
+
 .panel {
   background-color: transparent;
 }
@@ -81,12 +95,6 @@ Medium - 64.0625em
 .hidden {
   display: none;
 }
-
-.side-nav li a:not(.button):hover, 
-.side-nav li a:not(.button):focus {
-  background: transparent;
-}
-
 
 /** TOPBAR **/
 
