@@ -4,6 +4,11 @@ Small - 40.0625em
 Medium - 64.0625em
 */
 
+@font-face {
+    font-family: 'Calibri Light';
+    src: url('/fonts/calibri_light.ttf')  format('truetype');
+}
+
 body {
   font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
