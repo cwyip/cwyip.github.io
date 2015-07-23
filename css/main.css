@@ -17,10 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 
-button, .button {
-  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
-}
-
 .tabs .tab-title > a {
   font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
@@ -255,4 +251,22 @@ button, .button {
 }
 
 /** ---------------------- **/
+
+
+/** Buttons **/
+
+button, .button {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  background-color: transparent;
+  color: #222;
+  border-color: #222;
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+  background: #555;
+  color: #EEE;
+}
+
+/** ------------ */
 
