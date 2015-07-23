@@ -4,6 +4,36 @@ Small - 40.0625em
 Medium - 64.0625em
 */
 
+@font-face {
+    font-family: 'Calibri Light';
+    src: url('/fonts/calibri_light.ttf')  format('truetype');
+}
+
+body {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+.tabs .tab-title > a {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+.accordion .accordion-navigation > a, 
+.accordion dd > a {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+.sub-nav li {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+.label {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
 @media only screen and (max-width: 40.0625em) {
   #main_body {
     padding-top: 5px;
@@ -21,7 +51,9 @@ Medium - 64.0625em
     #sidebar {
         position: fixed;
         width: 200px;
+        height: 100%;
         z-index: 99;
+        /*box-shadow: 1px 0 1px rgba(0, 0, 0, 0.2);*/
     }
 
     #main_body {
@@ -56,8 +88,19 @@ Medium - 64.0625em
   padding-left: 30px;
 }
 
+/** Sidebar **/
+
+.side-nav {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
 .side-nav .second-level {
   list-style-type: none;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .side-nav .second-level.hide {
@@ -69,6 +112,22 @@ Medium - 64.0625em
   height: 10px;
 }
 
+.side-nav li a:not(.button):hover, 
+.side-nav li a:not(.button):focus {
+  background: transparent;
+  color: #555;
+}
+
+.side-nav li a:not(.button) {
+  color: #222;
+}
+
+.side-nav li.active > a:first-child: not(.button) {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+/**------------**/
+
 .panel {
   background-color: transparent;
 }
@@ -76,12 +135,6 @@ Medium - 64.0625em
 .hidden {
   display: none;
 }
-
-.side-nav li a:not(.button):hover, 
-.side-nav li a:not(.button):focus {
-  background: transparent;
-}
-
 
 /** TOPBAR **/
 
@@ -107,7 +160,7 @@ Medium - 64.0625em
 /* topbar H1 name */
 ,.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a
 {
-    /*font-family: "Crimson Text",serif;*/
+    font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     color: #333;
     font-size: 14px;
     font-weight: 400;
@@ -192,10 +245,28 @@ Medium - 64.0625em
 /* responsive dropdown back menu */
 .top-bar-section .dropdown li.parent-link a, .top-bar-section .dropdown li.title h5 a {
     color: #333;
-    /*font-family: "Crimson Text",serif;*/
+    font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     font-size: 18px;
     /*text-transform: uppercase;*/
 }
 
 /** ---------------------- **/
+
+
+/** Buttons **/
+
+button, .button {
+  font-family: "Calibri Light", Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  background-color: transparent;
+  color: #222;
+  border-color: #222;
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+  background: #555;
+  color: #EEE;
+}
+
+/** ------------ */
 
