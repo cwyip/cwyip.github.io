@@ -21,7 +21,9 @@ Medium - 64.0625em
     #sidebar {
         position: fixed;
         width: 200px;
+        height: 100%;
         z-index: 99;
+        /*box-shadow: 1px 0 1px rgba(0, 0, 0, 0.2);*/
     }
 
     #main_body {

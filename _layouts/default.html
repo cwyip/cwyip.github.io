@@ -4,9 +4,11 @@
   {% include head.html %}
 
   <body>
-    {% include mobile_nav.html %}
+    <div class="hide-for-print">
+      {% include mobile_nav.html %}
+    </div>
     <div class="row">
-      <div id="sidebar" class="medium-3 large-3 columns show-for-medium-up">
+      <div id="sidebar" class="medium-3 large-3 columns show-for-medium-up hide-for-print">
         <!-- Sidebar -->
         {% include desktop_nav.html %}
       </div>
